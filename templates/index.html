@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Data Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Dashboard</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
@@ -23,40 +24,140 @@
 </head>
 
 <body>
-    
-    <div class = "container">
-        
-        <section id="page_title">
-            <div class="row">
-                <div class="col-md-12 text-center text-primary">
-                    <h1>Title</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page_title text-center text-primary">
+                    <h1>Whiskey Analysis</h1>
+                    <p>A scientific meta-analysis of whiskey flavours and quality. All the graphs on this page have used data found <a href="https://whiskyanalysis.com/index.php/database/" target="_new">here</a>.</p>
+
                 </div>
-            </div>
-        </section>
-        
-        <section id="page_description">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>Type your description here</p>
-                </div>
-            </div>
-        </section>
-        
-        <div class = "row" >
-            <div class = "col-md-8" id = "country_count_bar_chart">
-            </div>
-            <div class = "col-md-4">
-                <p>Chart description here</p>
             </div>
         </div>
- 
- <span id = "whiskey_count_by_cost_chart"></span>
- <span id = "whiskey_count_by_class_chart"></span>
- <span id = "whiskey_count_by_type_chart"></span>
- <span id = "count_by_country_pie_chart"></span>
- <span id = "scatter-plot"></span>
- <span id = "box_plot_cost_rating_corelation"></span>
 
+
+
+
+
+        <!--#first graph -->
+        <section class="graph">
+            <div class="row">
+                <div class="col-md-12 text-primary graph text-right">
+                    <h3>Cost rating corelation
+                        <h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 " id="box_plot_cost_rating_corelation">
+                </div>
+                <div class="col-md-3">
+                    <p>The box plot shows the relation between the price of the porudct and the customers reviews. A surprising fact is that as the price of the product goes up the reviews don't rise proportionally to the price increase and the spectrum
+                        narrows to a certain minimum level after which the difference doesn't seem to be justified.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--end firstgraph-->
+
+        <hr>
+
+
+        <!--#second graph-->
+
+        <section class="graph">
+            <div class="row">
+                <div class="col-md-12 text-primary">
+                    <h3>Cost to product correlation
+                        <h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <p>This chart showcases the relation between the cost of whiskey and the type. Single Malt Whiskey is the most expensive and the most popular for a number of reasons but the main one is the wide variety of brands and broad spectrum of
+                        prices which allows customers to find single malt whiskey for their budget. It is followed by Blend Whiskey and Burbon</p>
+                </div>
+                <div class="col-md-9 " id="whiskey_count_by_cost_chart">
+                </div>
+            </div>
+        </section>
+
+        <!--<#end second graph>-->
+
+        <hr>
+
+
+        <!--<#graph3>-->
+
+        <section class="graph">
+            <div class="row">
+                <div class="col-md-12 text-primary text-right">
+                    <h3>World's largest producers
+                        <h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 " id="count_by_country_pie_chart">
+                </div>
+                <div class="col-md-3">
+                    <p>This pie chart presents the top three producers of whiskey in the world. Scotland is the biggest producer of whisky in the world, and has been for at least 100 years with more than 1.2bn bottles exported globally in 2017. It is followed
+                        by the USA with a production of approximately 37 million cases of whiskey each year. Canada comes in third place with just over 21 million cases of whisky.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--#end third graph-->
+
+        <hr>
+
+
+        <!--#fourthgraph-->
+
+        <section class="graph">
+            <div class="row">
+                <div class="col-md-12 text-primary">
+                    <h3>Whiskey count by type
+                        <h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <p>This chart presents the popularity of whiskey based on the type of whiskeys in our data. Malt Whisky ranks among the best whiskies and is predominantly produced in Scotland. It may only be made from malted barley and has to be distilled
+                        in pot stills. The process of malting is elaborate and used to be very time-consuming and physically demanding without the modern technology.</p>
+                </div>
+                <div class="col-md-9 " id="whiskey_count_by_type_chart">
+                    <!--<h3>Cost rating corelation</h3>-->
+                </div>
+            </div>
+        </section>
+
+        <!--#endfourthgraph-->
+
+        <hr>
+
+
+        <!--#fifthgraph-->
+
+        <section class="graph">
+            <div class="row">
+                <div class="col-md-12 text-primary text-right">
+                    <h3>Whiskey count by class
+                        <h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9" id="whiskey_count_by_class_chart">
+                </div>
+                <div class="col-md-3">
+                    <p>This chart presents the popularity of whiskey based on the taste and flavour. As we can see single malt leads by a large margin followed by Burbon and Rye both coming in much closer to each other. One of the reasons Single Malt is
+                        the most popular is the large margin of the industry that scotch covers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--#end of fifth graph-->
+
+        <hr>
 
     </div>
 </body>
