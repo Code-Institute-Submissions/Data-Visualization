@@ -28,6 +28,7 @@ Some of the elements of the website are animated. This was acheived using one of
 - crossfilter.js (https://square.github.io/crossfilter/)
 - d3.js (https://d3js.org/)
 - MySQL (https://www.mysql.com/)
+- MongoDB database
 - Flask (http://flask.pocoo.org/)
 - Git & GitHub for version control
 
@@ -37,7 +38,7 @@ Some of the elements of the website are animated. This was acheived using one of
 - Clear delimited sections
 - The user can interact and filter the data in the charts
 - The project includes the following type of graphs: box-plot chart, row chart, pie chart, and line chart
-- The data is stored in a MySQL database
+- The data is stored in a MongoDB database
 - The project uses Flask to retrieve the data from the database and return it to the browser
 - The charts are created by the D3.js library (https://d3js.org/)
 
@@ -48,7 +49,7 @@ Some of the elements of the website are animated. This was acheived using one of
 
 ## Testing
 - All code used on the site has been tested to ensure everything is working as expected
-- Site viewed and tested in the following browsers: Google Chrome, Opera, Microsoft Edge, Mozilla Firefox
+- Site viewed and tested in the following browsers: Google Chrome, Opera, Microsoft Edge, Mozilla Firefox and mobile browsers.
 
 ## Viewing the code locally
 
