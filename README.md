@@ -53,3 +53,6 @@ Some of the elements of the website are animated. This was acheived using :
 - To view this website locally you have to download the entire repository on your machine. 
 - Install all the necesary dependencies listed in the requirements.txt file, and run the dashboard.py file.
  
+# Wireframes
+
+-The wireframes for this project are located in the wireframes folder in the root of the project.
