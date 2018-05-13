@@ -7,23 +7,20 @@
 This is Cristian Burloiu's second project for Code Institute bootcamp, Dublin, Ireland January 2018. It presents graphs related to the production of whiskey worldwide.
 The data the graphs are based on is provided by Whisky Analysis.com. The original data can be found at : ( https://whiskyanalysis.com/ ).
 Git repository can be seen at ( https://github.com/CristianBurloiu/Data-Visualization )
+Live version can be seen at (https://whiskey-data.herokuapp.com/)
  
-### What does it do?
+### Navigation through the website
  
 This is a single page website. To see the whole content just scroll the page.
  
 ### Animations and effects
  
-Some of the elements of the website are animated. This was acheived using one of the following:
+Some of the elements of the website are animated. This was acheived using :
 
 - dc transitionDuration
 
  
 ### Technologies used 
-- HTML
-- CSS and Bootstrap(v.3.3.7) (https://getbootstrap.com/) for styling
-- Javascript (Bootstrap core Javascript)
-- JQuery (Bootstrap requirement) (https://jquery.com/)
 - dc.js (https://dc-js.github.io/dc.js/)
 - crossfilter.js (https://square.github.io/crossfilter/)
 - d3.js (https://d3js.org/)
@@ -31,8 +28,8 @@ Some of the elements of the website are animated. This was acheived using one of
 - MongoDB database
 - Flask (http://flask.pocoo.org/)
 - Git & GitHub for version control
-
-### Features 
+ 
+### Features
 
 - Responsive (mobile first) layout/graphs
 - Clear delimited sections

@@ -28,8 +28,6 @@ function whiskey_count_by_cost_chart(ndx) {
     let count_by_cost = cost_dim.group().reduceCount();
 
     dc.barChart("#whiskey_count_by_cost_chart")
-        // .width(600)
-        // .height(350)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(cost_dim)
         .group(count_by_cost)
@@ -110,7 +108,6 @@ function box_plot_cost_rating_corelation(ndx) {
     );
 
     dc.boxPlot("#box_plot_cost_rating_corelation")
-        // .width(768)
         .height(230)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(cost_dim)
